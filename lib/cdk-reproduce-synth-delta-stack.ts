@@ -1,12 +1,12 @@
 import * as cdk from '@aws-cdk/core';
-import * as es from '@aws-cdk/aws-elasticsearch';
+import * as opensearch from '@aws-cdk/aws-opensearchservice';
 
 export class CdkReproduceSynthDeltaStack extends cdk.Stack {
     constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
         super(scope, id, props);
 
-        new es.Domain(this, 'Domain', {
-            version: es.ElasticsearchVersion.V7_1,
+        new opensearch.Domain(this, 'Domain', {
+            version: opensearch.EngineVersion.ELASTICSEARCH_7_1,
             capacity: {
                 masterNodes: 5,
                 dataNodes: 20
