@@ -14,7 +14,7 @@ test('Elasticsearch provides certain lambda resources', () => {
                 "Properties": {
                     "Code": {
                         "S3Bucket": {
-                            "Ref": "AssetParametersf3d3a3cc7f26921b237eff24fc5dd7aef8f0465a1f376b8f7918eb3d4b3e8797S3BucketBEE108A9"
+                            "Ref": "AssetParameters4074092ab8b435c90a773e082601fa36def54c91cadfae59451bd0beda547cbcS3Bucket02FC0B28"
                         },
                         "S3Key": {
                             "Fn::Join": [
@@ -27,7 +27,7 @@ test('Elasticsearch provides certain lambda resources', () => {
                                                 "Fn::Split": [
                                                     "||",
                                                     {
-                                                        "Ref": "AssetParametersf3d3a3cc7f26921b237eff24fc5dd7aef8f0465a1f376b8f7918eb3d4b3e8797S3VersionKeyA877E3C9"
+                                                        "Ref": "AssetParameters4074092ab8b435c90a773e082601fa36def54c91cadfae59451bd0beda547cbcS3VersionKey547E84F8"
                                                     }
                                                 ]
                                             }
@@ -40,7 +40,7 @@ test('Elasticsearch provides certain lambda resources', () => {
                                                 "Fn::Split": [
                                                     "||",
                                                     {
-                                                        "Ref": "AssetParametersf3d3a3cc7f26921b237eff24fc5dd7aef8f0465a1f376b8f7918eb3d4b3e8797S3VersionKeyA877E3C9"
+                                                        "Ref": "AssetParameters4074092ab8b435c90a773e082601fa36def54c91cadfae59451bd0beda547cbcS3VersionKey547E84F8"
                                                     }
                                                 ]
                                             }
@@ -62,21 +62,21 @@ test('Elasticsearch provides certain lambda resources', () => {
                 },
                 "DependsOn": [
                     "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2"
-                ]
+                ],
             },
         },
         "Parameters": {
-            "AssetParametersf3d3a3cc7f26921b237eff24fc5dd7aef8f0465a1f376b8f7918eb3d4b3e8797S3BucketBEE108A9": {
+            "AssetParameters4074092ab8b435c90a773e082601fa36def54c91cadfae59451bd0beda547cbcS3Bucket02FC0B28": {
                 "Type": "String",
-                "Description": "S3 bucket for asset \"f3d3a3cc7f26921b237eff24fc5dd7aef8f0465a1f376b8f7918eb3d4b3e8797\""
+                "Description": "S3 bucket for asset \"4074092ab8b435c90a773e082601fa36def54c91cadfae59451bd0beda547cbc\""
             },
-            "AssetParametersf3d3a3cc7f26921b237eff24fc5dd7aef8f0465a1f376b8f7918eb3d4b3e8797S3VersionKeyA877E3C9": {
+            "AssetParameters4074092ab8b435c90a773e082601fa36def54c91cadfae59451bd0beda547cbcS3VersionKey547E84F8": {
                 "Type": "String",
-                "Description": "S3 key for asset version \"f3d3a3cc7f26921b237eff24fc5dd7aef8f0465a1f376b8f7918eb3d4b3e8797\""
+                "Description": "S3 key for asset version \"4074092ab8b435c90a773e082601fa36def54c91cadfae59451bd0beda547cbc\""
             },
-            "AssetParametersf3d3a3cc7f26921b237eff24fc5dd7aef8f0465a1f376b8f7918eb3d4b3e8797ArtifactHashAAFCA968": {
+            "AssetParameters4074092ab8b435c90a773e082601fa36def54c91cadfae59451bd0beda547cbcArtifactHashF236251A": {
                 "Type": "String",
-                "Description": "Artifact hash for asset \"f3d3a3cc7f26921b237eff24fc5dd7aef8f0465a1f376b8f7918eb3d4b3e8797\""
+                "Description": "Artifact hash for asset \"4074092ab8b435c90a773e082601fa36def54c91cadfae59451bd0beda547cbc\""
             }
         },
     }))
